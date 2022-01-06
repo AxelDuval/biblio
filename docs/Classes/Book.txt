@@ -1,0 +1,23 @@
+Class Book
+
+id
+title
+author
+release_date
+category
+availablity
+---------------------------
+getId()
+getTitle()
+getAuthor()
+getRelease_date()
+getCategory()
+getAvailablity
+
+setTitle(title)
+setAuthor(author)
+setRelease_date(release_date)
+setCategory(category)
+setAvailablity(availablity)
+
+

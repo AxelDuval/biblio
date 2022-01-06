@@ -10,7 +10,7 @@
           <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Page 1</a>
+          <a class="nav-link" href="../livres.php">Livres</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Page 2</a>

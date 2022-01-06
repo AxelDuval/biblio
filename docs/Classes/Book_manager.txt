@@ -1,0 +1,6 @@
+Class Book_manager
+
+books
+---------
+getBooks()
+addBook(book)
