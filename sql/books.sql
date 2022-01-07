@@ -1,11 +1,12 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1
--- Généré le : ven. 07 jan. 2022 à 10:36
--- Version du serveur : 10.4.22-MariaDB
--- Version de PHP : 8.1.1
+DROP DATABASE IF EXISTS biblio;
+CREATE DATABASE biblio CHARACTER SET 'utf8';
+USE biblio;
+
+DROP USER IF EXISTS 'admin' @'Localhost';
+
+CREATE USER 'admin' @'Localhost';
+
+GRANT ALL PRIVILEGES ON biblio.* To 'admin' @'Localhost' IDENTIFIED BY 'admin';
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

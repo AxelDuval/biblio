@@ -3,21 +3,10 @@ include('templates/header.php');
 include('templates/nav.php');
 require_once('Model/entity/Book.class.php');
 require_once('Model/Book_manager.class.php');
-?>
 
-
-<?php
-$book1 = new Book(1, "Dom Quichotte", "Miguel Cervantes", 1605, "Roman", "Disponible");
-$book2 = new Book(2, "Voyage au bout de la nuit", "Louis-Ferdinand Céline", 1932, "Roman", "Indisponible");
-$book3 = new Book(3, "Le Petit Prince", "Antoine de Saint-Exupéry", 1943, "Roman", "Disponible");
-$book4 = new Book(4, "Les Fleurs du mal", "Charles Baudelaire", 1857, "Roman", "Disponible");
 
 $bookManager = new Book_manager;
-$bookManager-> addBook($book1);
-$bookManager-> addBook($book2);
-$bookManager-> addBook($book3);
-$bookManager-> addBook($book4);
-
+$bookManager->loadBooks();
 ?>
 
 
@@ -39,7 +28,7 @@ $bookManager-> addBook($book4);
         </thead>
         <tbody>
 
-            <?php 
+            <?php
             $books = $bookManager->getBooks();
             for ($i = 0; $i < count($books); $i++) : ?>
                 <tr>
