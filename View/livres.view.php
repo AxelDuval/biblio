@@ -3,10 +3,6 @@ include('templates/header.php');
 include('templates/nav.php');
 require_once('Model/entity/Book.class.php');
 require_once('Model/Book_manager.class.php');
-
-
-$bookManager = new Book_manager;
-$bookManager->loadBooks();
 ?>
 
 
@@ -29,7 +25,6 @@ $bookManager->loadBooks();
         <tbody>
 
             <?php
-            $books = $bookManager->getBooks();
             for ($i = 0; $i < count($books); $i++) : ?>
                 <tr>
                     <th scope="row"><?= $books[$i]->getId() ?></th>
